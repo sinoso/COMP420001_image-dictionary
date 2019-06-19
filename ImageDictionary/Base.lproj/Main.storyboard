@@ -52,15 +52,15 @@
             </objects>
             <point key="canvasLocation" x="270" y="312"/>
         </scene>
-        <!--Dictionary View Controller-->
+        <!--Dic Search View Controller-->
         <scene sceneID="cBT-yu-CIT">
             <objects>
-                <viewController id="JCe-dD-ad5" customClass="dictionaryViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JCe-dD-ad5" customClass="dicSearchViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l0i-AQ-NYM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-Af-RcM" userLabel="searchTextField">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwp-Af-RcM" userLabel="Search Text Field">
                                 <rect key="frame" x="16" y="89" width="286" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="searchTextField"/>
@@ -73,7 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="search_icon3"/>
                                 <connections>
-                                    <action selector="searchButtonPressed:" destination="JCe-dD-ad5" eventType="touchUpInside" id="UPB-1c-U1P"/>
+                                    <action selector="searchButtonPressed:" destination="JCe-dD-ad5" eventType="touchUpInside" id="414-gy-bp2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -81,12 +81,70 @@
                         <viewLayoutGuide key="safeArea" id="nL6-Cx-Jhg"/>
                     </view>
                     <connections>
-                        <outlet property="searchTextField" destination="Qwp-Af-RcM" id="9F3-6l-7cz"/>
+                        <outlet property="searchTextField" destination="Qwp-Af-RcM" id="vNY-RD-B92"/>
+                        <segue destination="Hcc-aF-6II" kind="show" identifier="searchSegue" id="TqT-EB-0u2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRG-zX-Roh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1364" y="-361.33004926108379"/>
+        </scene>
+        <!--search-->
+        <scene sceneID="737-XR-v5W">
+            <objects>
+                <tableViewController title="search" id="Hcc-aF-6II" customClass="dicsTableViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="h44-nK-YfD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dicCellIdentifier" rowHeight="150" id="8Bb-kU-lem" customClass="dicTableViewCell" customModule="ImageDictionary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Bb-kU-lem" id="EsA-mh-kAB">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F5P-1D-UkK">
+                                            <rect key="frame" x="16" y="14" width="120" height="120"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="검색한거" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OFx-bn-pN8">
+                                            <rect key="frame" x="144" y="14" width="119" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="검색한거ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅁㄴㅇㄴㅁㅇㄴㅁㅁㄴㅇㅁㅇㄴㅁㅇㄴㄴㅁㅇㅁㅇㄴㅁㅇㄴㅁㅇㄴㅁㄴㅇㅁㄴㅇ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67U-O8-wcn">
+                                            <rect key="frame" x="144" y="43" width="215" height="91"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dsecLabel" destination="67U-O8-wcn" id="tgz-wT-6TP"/>
+                                    <outlet property="thumbImageView" destination="F5P-1D-UkK" id="4E0-44-ySq"/>
+                                    <outlet property="titleLabel" destination="OFx-bn-pN8" id="FBp-UG-7Zn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Hcc-aF-6II" id="UqY-5J-Vdh"/>
+                            <outlet property="delegate" destination="Hcc-aF-6II" id="d2t-hT-2YC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="search" id="qCN-7c-Y04"/>
+                    <connections>
+                        <outlet property="titleNavigationItem" destination="qCN-7c-Y04" id="m1k-mL-1Ch"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AdF-CD-DpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2320.8000000000002" y="-362.06896551724139"/>
         </scene>
         <!--Word View Controller-->
         <scene sceneID="YaL-zj-TkY">

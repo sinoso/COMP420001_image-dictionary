@@ -14,6 +14,10 @@
 		0F0533E622A0BD770025D3B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F0533E422A0BD770025D3B9 /* LaunchScreen.storyboard */; };
 		0F182CCF22B9FF3C0064FA2F /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */; };
 		0F182CD122B9FF490064FA2F /* wordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CD022B9FF490064FA2F /* wordViewController.swift */; };
+		0F6712B222BAC7D3001DE2E1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712B122BAC7D3001DE2E1 /* Model.swift */; };
+		0F6712B422BAC842001DE2E1 /* dicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712B322BAC841001DE2E1 /* dicTableViewCell.swift */; };
+		0F6712B622BAC8A4001DE2E1 /* dicSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712B522BAC8A4001DE2E1 /* dicSearchViewController.swift */; };
+		0F6712B822BAC932001DE2E1 /* dicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712B722BAC932001DE2E1 /* dicsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		0F0533E722A0BD770025D3B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
 		0F182CD022B9FF490064FA2F /* wordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordViewController.swift; sourceTree = "<group>"; };
+		0F6712B122BAC7D3001DE2E1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		0F6712B322BAC841001DE2E1 /* dicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dicTableViewCell.swift; sourceTree = "<group>"; };
+		0F6712B522BAC8A4001DE2E1 /* dicSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dicSearchViewController.swift; sourceTree = "<group>"; };
+		0F6712B722BAC932001DE2E1 /* dicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dicsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,10 @@
 				0F0533DB22A0BD750025D3B9 /* AppDelegate.swift */,
 				0F0533DD22A0BD750025D3B9 /* ViewController.swift */,
 				0F0533DF22A0BD750025D3B9 /* Main.storyboard */,
+				0F6712B522BAC8A4001DE2E1 /* dicSearchViewController.swift */,
+				0F6712B722BAC932001DE2E1 /* dicsTableViewController.swift */,
+				0F6712B122BAC7D3001DE2E1 /* Model.swift */,
+				0F6712B322BAC841001DE2E1 /* dicTableViewCell.swift */,
 				0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */,
 				0F182CD022B9FF490064FA2F /* wordViewController.swift */,
 				0F0533E222A0BD770025D3B9 /* Assets.xcassets */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F6712B222BAC7D3001DE2E1 /* Model.swift in Sources */,
 				0F182CD122B9FF490064FA2F /* wordViewController.swift in Sources */,
+				0F6712B822BAC932001DE2E1 /* dicsTableViewController.swift in Sources */,
 				0F182CCF22B9FF3C0064FA2F /* noteViewController.swift in Sources */,
+				0F6712B622BAC8A4001DE2E1 /* dicSearchViewController.swift in Sources */,
 				0F0533DE22A0BD750025D3B9 /* ViewController.swift in Sources */,
+				0F6712B422BAC842001DE2E1 /* dicTableViewCell.swift in Sources */,
 				0F0533DC22A0BD750025D3B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
