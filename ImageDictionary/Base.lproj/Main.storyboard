@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbX-GM-InC">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,41 +15,49 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvI-5Y-HFQ">
-                                <rect key="frame" x="44" y="117" width="140" height="140"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQM-MM-B2T">
+                                <rect key="frame" x="16" y="153" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j1D-qJ-0ub">
-                                <rect key="frame" x="230" y="117" width="140" height="140"/>
+                                <state key="normal" title="Button" image="dictionary_Image"/>
+                                <connections>
+                                    <segue destination="JCe-dD-ad5" kind="show" id="f8s-uh-wkk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="loD-Hi-A3b">
+                                <rect key="frame" x="209" y="153" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KJR-px-ShE">
-                                <rect key="frame" x="137" y="304" width="140" height="140"/>
+                                <state key="normal" title="Button" image="word_Image"/>
+                                <connections>
+                                    <segue destination="AIq-Ku-rGg" kind="show" id="nlT-VT-Rfy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="988-Zf-nzh">
+                                <rect key="frame" x="112" y="338" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="note_Image"/>
+                                <connections>
+                                    <segue destination="td7-UK-g2N" kind="show" id="If3-u8-maN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <segue destination="td7-UK-g2N" kind="show" id="JjC-NY-xIy"/>
-                        <segue destination="JCe-dD-ad5" kind="show" id="zn9-0z-cKF"/>
-                        <segue destination="AIq-Ku-rGg" kind="show" id="xzN-ni-J5t"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="HBG-YF-Nv9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321.73913043478262" y="311.38392857142856"/>
+            <point key="canvasLocation" x="270" y="312"/>
         </scene>
-        <!--View Controller-->
+        <!--Dictionary View Controller-->
         <scene sceneID="cBT-yu-CIT">
             <objects>
-                <viewController id="JCe-dD-ad5" sceneMemberID="viewController">
+                <viewController id="JCe-dD-ad5" customClass="dictionaryViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l0i-AQ-NYM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nL6-Cx-Jhg"/>
@@ -57,14 +65,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zRG-zX-Roh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1271" y="296"/>
+            <point key="canvasLocation" x="1365" y="-361"/>
         </scene>
-        <!--View Controller-->
+        <!--Word View Controller-->
         <scene sceneID="YaL-zj-TkY">
             <objects>
-                <viewController id="AIq-Ku-rGg" sceneMemberID="viewController">
+                <viewController id="AIq-Ku-rGg" customClass="wordViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7yc-3r-kMJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rzC-Yb-jpl"/>
@@ -72,14 +80,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TLU-fH-zh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1266" y="967"/>
+            <point key="canvasLocation" x="1364" y="312"/>
         </scene>
-        <!--View Controller-->
+        <!--Note View Controller-->
         <scene sceneID="TQN-d4-Pfi">
             <objects>
-                <viewController id="td7-UK-g2N" sceneMemberID="viewController">
+                <viewController id="td7-UK-g2N" customClass="noteViewController" customModule="ImageDictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LOi-nb-QsB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IHY-Q8-e4j"/>
@@ -87,7 +95,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Htm-em-e1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1287" y="-376"/>
+            <point key="canvasLocation" x="1359" y="984"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dVQ-xi-gzi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sbX-GM-InC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vum-kv-syz">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wF8-7I-lUS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N56-ls-DUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="312"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dictionary_Image" width="1251" height="1251"/>
+        <image name="note_Image" width="1253.25" height="1248.75"/>
+        <image name="word_Image" width="1256.25" height="1254.75"/>
+    </resources>
 </document>
