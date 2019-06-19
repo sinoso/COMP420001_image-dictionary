@@ -35,26 +35,26 @@ class Dictionary_Data {
         return
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCellIdentifier", for: indexPath) as! MoviesTableViewCell
-        let movie = movies[indexPath.row]
-        
-        // cell 구성 부분 생략
-        
-        // Async activity
-        // 영화 포스터 이미지 불러오기
-        if let posterImage = movie.image {
-            cell.posterImageView.image = posterImage
-        } else {
-            cell.posterImageView.image = UIImage(named: "noImage")
-            DispatchQueue.main.async(execute: {
-                movie.getPosterImage()
-                guard let thumbImage = movie.image else {
-                    return
-                }
-                cell.posterImageView.image = thumbImage
-            })
-        }
-        return cell
-    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "movieCellIdentifier", for: indexPath) as! MoviesTableViewCell
+//        let movie = movies[indexPath.row]
+//        
+//        // cell 구성 부분 생략
+//        
+//        // Async activity
+//        // 영화 포스터 이미지 불러오기
+//        if let posterImage = movie.image {
+//            cell.posterImageView.image = posterImage
+//        } else {
+//            cell.posterImageView.image = UIImage(named: "noImage")
+//            DispatchQueue.main.async(execute: {
+//                movie.getPosterImage()
+//                guard let thumbImage = movie.image else {
+//                    return
+//                }
+//                cell.posterImageView.image = thumbImage
+//            })
+//        }
+//        return cell
+//    }
 }
