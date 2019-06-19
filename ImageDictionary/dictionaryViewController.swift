@@ -8,23 +8,30 @@
 
 import UIKit
 
-class dictionaryViewController: UIViewController {
-
+class dictionaryViewController: UIViewController{
+    
+    @IBOutlet weak var searchTextField: UITextField!
+    
+    @IBAction func searchButtonPressed(_ sender: Any) {
+        if let query = searchTextField.text {
+            performSegue(withIdentifier: "searchSegue", sender: self)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let ImageDicVC = segue.destination as? dictionaryTableviewController {
+            if let text = searchTextField.text {
+                ImageDicVC.queryText = text
+            }
+        }
     }
-    */
-
+    
+    
+    
 }
+

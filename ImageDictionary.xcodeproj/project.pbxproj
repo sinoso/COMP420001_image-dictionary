@@ -15,6 +15,9 @@
 		0F182CCD22B9FF2C0064FA2F /* dictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CCC22B9FF2C0064FA2F /* dictionaryViewController.swift */; };
 		0F182CCF22B9FF3C0064FA2F /* noteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */; };
 		0F182CD122B9FF490064FA2F /* wordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CD022B9FF490064FA2F /* wordViewController.swift */; };
+		0F182CD522BA6D8B0064FA2F /* dictionary_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CD422BA6D8B0064FA2F /* dictionary_data.swift */; };
+		0F182CD722BA7CC40064FA2F /* dictionaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CD622BA7CC40064FA2F /* dictionaryTableViewController.swift */; };
+		0F182CDB22BA9AFC0064FA2F /* dictionaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F182CDA22BA9AFC0064FA2F /* dictionaryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		0F182CCC22B9FF2C0064FA2F /* dictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryViewController.swift; sourceTree = "<group>"; };
 		0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = noteViewController.swift; sourceTree = "<group>"; };
 		0F182CD022B9FF490064FA2F /* wordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordViewController.swift; sourceTree = "<group>"; };
+		0F182CD422BA6D8B0064FA2F /* dictionary_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionary_data.swift; sourceTree = "<group>"; };
+		0F182CD622BA7CC40064FA2F /* dictionaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryTableViewController.swift; sourceTree = "<group>"; };
+		0F182CDA22BA9AFC0064FA2F /* dictionaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dictionaryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +70,14 @@
 				0F0533DD22A0BD750025D3B9 /* ViewController.swift */,
 				0F0533DF22A0BD750025D3B9 /* Main.storyboard */,
 				0F182CCC22B9FF2C0064FA2F /* dictionaryViewController.swift */,
+				0F182CD622BA7CC40064FA2F /* dictionaryTableViewController.swift */,
+				0F182CD422BA6D8B0064FA2F /* dictionary_data.swift */,
 				0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */,
 				0F182CD022B9FF490064FA2F /* wordViewController.swift */,
 				0F0533E222A0BD770025D3B9 /* Assets.xcassets */,
 				0F0533E422A0BD770025D3B9 /* LaunchScreen.storyboard */,
 				0F0533E722A0BD770025D3B9 /* Info.plist */,
+				0F182CDA22BA9AFC0064FA2F /* dictionaryTableViewCell.swift */,
 			);
 			path = ImageDictionary;
 			sourceTree = "<group>";
@@ -145,8 +154,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F182CD122B9FF490064FA2F /* wordViewController.swift in Sources */,
+				0F182CDB22BA9AFC0064FA2F /* dictionaryTableViewCell.swift in Sources */,
 				0F182CCF22B9FF3C0064FA2F /* noteViewController.swift in Sources */,
 				0F0533DE22A0BD750025D3B9 /* ViewController.swift in Sources */,
+				0F182CD722BA7CC40064FA2F /* dictionaryTableViewController.swift in Sources */,
+				0F182CD522BA6D8B0064FA2F /* dictionary_data.swift in Sources */,
 				0F0533DC22A0BD750025D3B9 /* AppDelegate.swift in Sources */,
 				0F182CCD22B9FF2C0064FA2F /* dictionaryViewController.swift in Sources */,
 			);
