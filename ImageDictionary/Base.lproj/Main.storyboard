@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbX-GM-InC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sbX-GM-InC">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -228,7 +228,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P90-JH-Pce">
                                 <rect key="frame" x="233" y="99" width="98" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="메모작성"/>
                                 <connections>
                                     <action selector="Add:" destination="td7-UK-g2N" eventType="touchUpInside" id="8mA-2d-2lq"/>
                                     <segue destination="9qJ-1F-ahX" kind="show" id="Hf6-NT-KCb"/>
@@ -268,7 +268,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IHY-Q8-e4j"/>
                     </view>
                     <connections>
@@ -298,7 +298,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTF-XR-CH0">
                                 <rect key="frame" x="255" y="106" width="78" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="save"/>
+                                <state key="normal" title="저장"/>
                                 <connections>
                                     <action selector="Save:" destination="9qJ-1F-ahX" eventType="touchUpInside" id="wcJ-pk-4vM"/>
                                     <segue destination="td7-UK-g2N" kind="show" id="YXE-Iq-w5t"/>
@@ -307,7 +307,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-oh-xaS">
                                 <rect key="frame" x="16" y="117" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="삭제"/>
                                 <connections>
                                     <action selector="Delete:" destination="9qJ-1F-ahX" eventType="touchUpInside" id="iMg-Si-qaM"/>
                                     <segue destination="td7-UK-g2N" kind="show" id="yH9-Ib-64T"/>
@@ -345,10 +345,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dictionary_Image" width="834" height="834"/>
-        <image name="note_Image" width="835.5" height="832.5"/>
-        <image name="search_icon3" width="512" height="512"/>
-        <image name="word_Image" width="837.5" height="836.5"/>
+        <image name="dictionary_Image" width="1251" height="1251"/>
+        <image name="note_Image" width="1253.25" height="1248.75"/>
+        <image name="search_icon3" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="word_Image" width="1256.25" height="1254.75"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="L98-3m-ehU"/>
