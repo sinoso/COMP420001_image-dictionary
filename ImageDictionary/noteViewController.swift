@@ -25,7 +25,7 @@ class noteViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MainCell
-        Cell.TitleLabel.text = "1"
+        Cell.TitleLabel.text = MemoData[indexPath.row]
         
         return Cell
     }

@@ -18,7 +18,7 @@ class Record: UIViewController {
             
         } else {
             MemoData = UserDefaults.standard.object(forKey: "MemoData") as! [String]
-            
+        
             RecordTextView.text = MemoData[MemoNumber]
         }
     }
@@ -38,4 +38,13 @@ class Record: UIViewController {
         }
     }
     
+    @IBAction func Delete(_ sender: Any) {
+        let MemoNumber = UserDefaults.standard.object(forKey: "MemoNumber") as! Int
+        
+        if MemoNumber != -1 {
+            
+          MemoData.remove(at: MemoNumber)
+            UserDefaults.standard.set(MemoData, forKey: "MemoData")
+        }
+    }
 }

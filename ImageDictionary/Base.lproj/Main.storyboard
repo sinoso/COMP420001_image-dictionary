@@ -304,6 +304,15 @@
                                     <segue destination="td7-UK-g2N" kind="show" id="YXE-Iq-w5t"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-oh-xaS">
+                                <rect key="frame" x="16" y="117" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="Delete:" destination="9qJ-1F-ahX" eventType="touchUpInside" id="iMg-Si-qaM"/>
+                                    <segue destination="td7-UK-g2N" kind="show" id="yH9-Ib-64T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="jEr-qE-MKW"/>
