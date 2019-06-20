@@ -12,7 +12,7 @@ class Record: UIViewController {
 
         let MemoNumber = UserDefaults.standard.object(forKey: "MemoNumber") as! Int
         if MemoNumber == -1 {
-            MemoData = UserDefaults.standard.object(forKey: "MemoData") as! [String]
+            MemoData = UserDefaults.standard.object(forKey: "MemoData") as? [String] ?? [String]()
             
                 RecordTextView.text = "..."
             
