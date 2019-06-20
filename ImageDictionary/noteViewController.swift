@@ -10,6 +10,8 @@ import UIKit
 
 class noteViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var MemoData = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +19,8 @@ class noteViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        MemoData = UserDefaults.standard.object(forKey: "MemoData") as? [String] ?? [String]()
+        return MemoData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -26,6 +29,10 @@ class noteViewController: UIViewController, UITableViewDelegate, UITableViewData
         return Cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("ABCD")
+        let MemoNumber = indexPath.row
+        UserDefaults.standard.set(MemoNumber, forKey: "MemoNumber")
+        
+        
+        self.performSegue(withIdentifier: "ToRecord", sender: self)
     }
 }
