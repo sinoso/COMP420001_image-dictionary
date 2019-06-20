@@ -35,4 +35,7 @@ class noteViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         self.performSegue(withIdentifier: "ToRecord", sender: self)
     }
+    @IBAction func Add(_ sender: Any) {
+    UserDefaults.standard.set(-1, forKey: "MemoNumber")
+    }
 }

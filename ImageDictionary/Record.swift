@@ -27,8 +27,16 @@ class Record: UIViewController {
     
 
     @IBAction func Save(_ sender: Any) {
+        let MemoNumber = UserDefaults.standard.object(forKey: "MemoNumber") as! Int
+        if MemoNumber == -1 {
         MemoData.insert(RecordTextView.text, at: 0)
         UserDefaults.standard.set(MemoData, forKey: "MemoData")
+        } else {
+            MemoData.remove(at: MemoNumber)
+            MemoData.insert(RecordTextView.text, at: MemoNumber)
+            
+            UserDefaults.standard.set(MemoData, forKey: "MemoData")
+        }
     }
     
 }

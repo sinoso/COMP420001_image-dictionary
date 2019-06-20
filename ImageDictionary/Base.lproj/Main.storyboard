@@ -230,6 +230,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
+                                    <action selector="Add:" destination="td7-UK-g2N" eventType="touchUpInside" id="8mA-2d-2lq"/>
                                     <segue destination="9qJ-1F-ahX" kind="show" id="Hf6-NT-KCb"/>
                                 </connections>
                             </button>
