@@ -20,6 +20,7 @@
 		0F6712B822BAC932001DE2E1 /* dicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712B722BAC932001DE2E1 /* dicsTableViewController.swift */; };
 		0F6712D822BAE065001DE2E1 /* dicJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6712D722BAE065001DE2E1 /* dicJsonViewController.swift */; };
 		D37A4BBA22BB576A00109543 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A4BB922BB576A00109543 /* Record.swift */; };
+		D37A4BBE22BB76F600109543 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37A4BBD22BB76F600109543 /* MainCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0F6712B722BAC932001DE2E1 /* dicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dicsTableViewController.swift; sourceTree = "<group>"; };
 		0F6712D722BAE065001DE2E1 /* dicJsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dicJsonViewController.swift; sourceTree = "<group>"; };
 		D37A4BB922BB576A00109543 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		D37A4BBD22BB76F600109543 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				0F6712B122BAC7D3001DE2E1 /* Model.swift */,
 				0F6712D922BAE5EF001DE2E1 /* dicXML */,
 				0F182CCE22B9FF3C0064FA2F /* noteViewController.swift */,
+				D37A4BBD22BB76F600109543 /* MainCell.swift */,
 				D37A4BB922BB576A00109543 /* Record.swift */,
 				0F182CD022B9FF490064FA2F /* wordViewController.swift */,
 				0F0533E222A0BD770025D3B9 /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				D37A4BBA22BB576A00109543 /* Record.swift in Sources */,
 				0F6712B822BAC932001DE2E1 /* dicsTableViewController.swift in Sources */,
 				0F182CCF22B9FF3C0064FA2F /* noteViewController.swift in Sources */,
+				D37A4BBE22BB76F600109543 /* MainCell.swift in Sources */,
 				0F6712B622BAC8A4001DE2E1 /* dicSearchViewController.swift in Sources */,
 				0F6712D822BAE065001DE2E1 /* dicJsonViewController.swift in Sources */,
 				0F0533DE22A0BD750025D3B9 /* ViewController.swift in Sources */,
